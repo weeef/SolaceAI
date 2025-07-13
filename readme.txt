@@ -20,3 +20,14 @@ SolaceAI is a conversational AI designed to offer empathetic, evidence-based men
 ```bash
 git clone https://github.com/weeef/SolaceAI.git
 cd solaceai
+
+## 2. Install Dependencies
+npm install react react-dom
+npx webpack --config webpack.config.js
+**To Interact**
+Open index.html in your favorite web browser to interact with SolaceAI.
+
+Development
+- The frontend is built using React and Webpack.
+- LLM integration is via a REST API (/chat) that can be accessed locally or through a cloud-based service.
+- To run the frontend, ensure you have Node.js installed and follow the steps above.
