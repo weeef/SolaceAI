@@ -1,0 +1,30 @@
+<!-- feedback.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolaceAI - Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Feedback option -->
+  <div class="feedback">
+    <h2>We value your feedback!</h2>
+    <form id="feedback-form">
+      <label for="rating">Rate your experience:</label>
+      <select id="rating" name="rating">
+        <option value="1">1 (Poor)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Excellent)</option>
+      </select><br><br>
+      <textarea id="feedback" placeholder="Share your thoughts..."></textarea>
+    </form>
+    <button onclick="submitFeedback()">Submit Feedback</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+import { routes } from './routes.js';
+import { renderPage } from './render-page.js';
+
+window.addEventListener('load', () => {
+  const url = window.location.pathname;
+  const routeMatch = routes.find((route) => route.path === url);
+
+  if (routeMatch) {
+    renderPage(routeMatch.component, routeMatch.data);
+  }
+});
+
+function renderPage(component, data) {
+  const container = document.getElementById('root');
+  container.innerHTML = '';
+
+  // Render the component with the provided data
+  const element = component.render(data);
+  container.appendChild(element);
+
+  // Set up event listeners for any interactive elements
+  element.querySelectorAll('button').forEach((button) => {
+    button.addEventListener('click', (event) => {
+      // Handle button clicks here
+    });
+  });
+}

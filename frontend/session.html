@@ -1,0 +1,29 @@
+<!-- session.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolaceAI - Session</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Personalized session setup -->
+  <div class="session-setup">
+    <h2>Let's get started!</h2>
+    <form id="session-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="preferences">Preferred Therapy Style:</label>
+      <select id="preferences" name="preferences">
+        <option value="cognitive-behavioral">Cognitive Behavioral</option>
+        <option value="humanistic">Humanistic</option>
+        <option value="psychodynamic">Psychodynamic</option>
+      </select><br><br>
+    </form>
+    <button onclick="saveSessionSettings()">Save Preferences</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
