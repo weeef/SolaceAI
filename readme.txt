@@ -18,5 +18,5 @@ SolaceAI is a conversational AI designed to offer empathetic, evidence-based men
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/yourusername/solaceai.git
+git clone https://github.com/weeef/SolaceAI.git
 cd solaceai
